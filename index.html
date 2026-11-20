@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Feliz Primero de Octubre | Una Experiencia Romántica</title>
+    <title>Plantilla Gótica Romántica</title>
     
     <!-- External Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Favicon (Imagen en la pestaña del navegador) -->
-    <link rel="icon" type="image/png" href="media/tata.png">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -177,7 +174,7 @@
     <!-- Background Canvas for Fog, Leaves & Stars -->
     <canvas id="bg-canvas"></canvas>
 
-    <!-- SECTION 1: PANTALLA DE ENTRADA / EFECTO DE OCTUBRE -->
+    <!-- SECTION 1: PANTALLA DE ENTRADA -->
     <div id="intro-overlay" class="p-6 text-center">
         <div class="max-w-md w-full space-y-6">
             <div class="w-16 h-16 mx-auto mb-4 border-2 border-goldGlow rounded-full flex items-center justify-center animate-pulse-glow">
@@ -191,7 +188,7 @@
             </div>
 
             <button id="btn-enter" class="hidden px-8 py-3 bg-crimsonWine hover:bg-red-900 text-goldGlow font-cinzel tracking-widest text-sm rounded-full border border-goldGlow shadow-lg transition-all transform hover:scale-105 active:scale-95">
-                ENTRAR A NUESTRO SEGUNDO OCTUBRE
+                ENTRAR
             </button>
         </div>
     </div>
@@ -221,21 +218,21 @@
 
             <div class="relative z-10 max-w-4xl mx-auto space-y-6">
                 <span class="inline-block px-4 py-1 border border-goldGlow/40 rounded-full text-xs font-cinzel tracking-widest text-goldGlow bg-darkPurple/60 backdrop-blur-sm">
-                    1 DE OCTUBRE · NUESTRO SEGUNDO AÑO
+                    SUBTÍTULO HERO
                 </span>
 
                 <h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-goldGlow via-amber-200 to-goldGlow tracking-wider drop-shadow-lg">
-                    Feliz Primero de Octubre
+                    Título Principal
                 </h1>
 
                 <p class="font-garamond text-2xl sm:text-3xl text-purple-200 italic font-semibold max-w-2xl mx-auto">
-                    Que comience nuestro mes favorito y nuestra cuenta regresiva...
+                    Descripción corta del hero.
                 </p>
 
                 <div class="w-32 h-0.5 mx-auto bg-gradient-to-r from-transparent via-goldGlow to-transparent my-6"></div>
 
                 <p class="font-playfair text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed px-4">
-                    "Entre hojas que caen, noches que llegan temprano y la emoción de escuchar a tus ídolos, quiero que este segundo octubre tenga la mejor melodía para nosotros."
+                    "Párrafo de introducción."
                 </p>
 
                 <div class="pt-10">
@@ -251,9 +248,9 @@
         <section id="section-music1" class="py-20 px-4 max-w-3xl mx-auto">
             <div class="music-box-card rounded-2xl p-6 sm:p-10 gothic-border text-center space-y-6">
                 <div class="space-y-2">
-                    <span class="text-xs font-cinzel tracking-widest text-pumpkinOrange uppercase">Caja Musical Antigua</span>
-                    <h2 class="font-cinzel text-2xl sm:text-3xl text-goldGlow font-bold">Una canción para comenzar octubre</h2>
-                    <p class="font-garamond text-lg text-purple-300 italic">"Presiona play y deja que nuestro mes inicie..."</p>
+                    <span class="text-xs font-cinzel tracking-widest text-pumpkinOrange uppercase">Reproductor</span>
+                    <h2 class="font-cinzel text-2xl sm:text-3xl text-goldGlow font-bold">Título de la sección</h2>
+                    <p class="font-garamond text-lg text-purple-300 italic">"Instrucción."</p>
                 </div>
 
                 <!-- Animated Gear Icon / Visualizer -->
@@ -267,8 +264,8 @@
 
                 <!-- Audio Track info -->
                 <div class="space-y-1">
-                    <p id="player1-title" class="font-cinzel text-lg text-goldGlow">Melodía Nocturna de Octubre</p>
-                    <p class="text-xs text-slate-400 font-montserrat">media/octubre.mp3</p>
+                    <p id="player1-title" class="font-cinzel text-lg text-goldGlow">Título del audio</p>
+                    <p class="text-xs text-slate-400 font-montserrat">ruta/audio.mp3</p>
                 </div>
 
                 <!-- Progress Bar -->
@@ -276,7 +273,7 @@
                     <input id="player1-seek" type="range" min="0" max="100" value="0" class="w-full accent-goldGlow cursor-pointer bg-darkPurple h-1.5 rounded-lg">
                     <div class="flex justify-between text-xs text-slate-400 font-mono">
                         <span id="player1-time-curr">00:00</span>
-                        <span id="player1-time-dur">03:30</span>
+                        <span id="player1-time-dur">00:00</span>
                     </div>
                 </div>
 
@@ -293,72 +290,70 @@
                     </div>
                 </div>
 
-                <!-- Hidden audio tag with synthesis fallback -->
-                <audio id="audio1" src="media/octubre.mp3" preload="auto"></audio>
+                <!-- Hidden audio tag -->
+                <audio id="audio1" src="" preload="auto"></audio>
             </div>
         </section>
 
-        <!-- SECTION 4: CARTA DE OCTUBRE -->
+        <!-- SECTION 4: TEXTO EN CAJA ESTILO PERGAMINO -->
         <section class="py-20 px-4 max-w-3xl mx-auto">
             <div class="relative bg-[#12081f] p-8 sm:p-12 rounded-lg border-2 border-goldGlow/60 shadow-2xl space-y-6">
                 <!-- Antique Parchment Decoration Header -->
                 <div class="text-center space-y-2 border-b border-goldGlow/30 pb-6">
-                    <span class="font-cinzel text-xs text-warmAmber tracking-widest uppercase">Pergamino de Otoño</span>
-                    <h2 class="font-playfair text-3xl sm:text-4xl text-goldGlow font-bold">Para ti, en nuestro segundo octubre</h2>
+                    <span class="font-cinzel text-xs text-warmAmber tracking-widest uppercase">Etiqueta pergamino</span>
+                    <h2 class="font-playfair text-3xl sm:text-4xl text-goldGlow font-bold">Título pergamino</h2>
                 </div>
 
                 <div class="font-garamond text-xl sm:text-2xl text-slate-200 leading-relaxed space-y-6 text-justify">
                     <p>
-                        Feliz primero de octubre, <span class="text-warmAmber font-semibold">mi vida</span>. Hoy le damos la bienvenida por segunda vez a este mes juntos, un mes que siempre guarda una magia distinta, una atmósfera donde el viento sopla más frío y las noches parecen invitar a buscar refugio en la calidez de quienes más amamos.
+                        Párrafo uno. <span class="text-warmAmber font-semibold">Texto destacado</span>.
                     </p>
                     <p>
-                        Con la llegada de octubre no solo se acercan las luces tenues y esa atmósfera otoñal que tanto nos gusta, sino que también marca la cuenta regresiva para uno de tus sueños más grandes. A solo un día del concierto de BTS, verte tan feliz y emocionada hace que este mes sea infinitamente mejor.
+                        Párrafo dos.
                     </p>
                     <p>
-                        Eres mi persona favorita, <span class="text-warmAmber font-semibold">mi reina hermosa colombiana</span>. No hace falta esperar una fecha perfecta en el calendario para recordarte lo mucho que significas para mí, pero celebrar este primer día de nuestro mes predilecto es la excusa más hermosa para abrazarte fuerte y comenzar a tejer nuevos recuerdos juntas.
+                        Párrafo tres. <span class="text-warmAmber font-semibold">Texto destacado</span>.
                     </p>
                     <p class="text-right italic font-playfair text-goldGlow pt-4">
-                        Con todo mi corazón,<br>
-                        Para <span class="text-warmAmber">mi bella damita</span>, en esta hermosa noche de octubre.
+                        Despedida,<br>
+                        <span class="text-warmAmber">Firma</span>.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 5: APODOS AUTORIZADOS -->
+        <!-- SECTION 5: GRID GENERADO POR JS -->
         <section class="py-20 px-4 max-w-5xl mx-auto">
             <div class="text-center space-y-4 mb-12">
-                <h2 class="font-cinzel text-3xl sm:text-4xl text-goldGlow font-bold tracking-wider">Palabras Dedicadas</h2>
-                <p class="font-garamond text-xl text-purple-300 italic">Cada apodo guarda un motivo para quererte aún más...</p>
+                <h2 class="font-cinzel text-3xl sm:text-4xl text-goldGlow font-bold tracking-wider">Título de sección</h2>
+                <p class="font-garamond text-xl text-purple-300 italic">Subtítulo de sección...</p>
             </div>
 
-            <!-- Grid of 11 exact authorized nicknames -->
+            <!-- Grid populated via JS -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="nicknames-grid">
-                <!-- Nickname cards populated via JS or rendered pure HTML -->
             </div>
         </section>
 
-        <!-- SECTION 6: FRASES CINEMATOGRÁFICAS -->
+        <!-- SECTION 6: GRID LISTA GENERADA POR JS -->
         <section class="py-20 px-4 max-w-6xl mx-auto">
             <div class="text-center space-y-4 mb-16">
-                <span class="text-xs font-cinzel tracking-widest text-pumpkinOrange uppercase">Inspiración de Cine Oscuro & Romántico</span>
-                <h2 class="font-cinzel text-3xl sm:text-5xl text-goldGlow font-bold">Como en una película...</h2>
+                <span class="text-xs font-cinzel tracking-widest text-pumpkinOrange uppercase">Etiqueta superior</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl text-goldGlow font-bold">Título de sección</h2>
                 <p class="font-garamond text-xl text-purple-200 italic max-w-2xl mx-auto">
-                    Frases nacidas de noches de luna, sombras elegantes y promesas eternas.
+                    Subtítulo de sección.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="cinema-phrases-grid">
-                <!-- 10 Original Gothic Romantic Phrases -->
             </div>
         </section>
 
-        <!-- SECTION 7: TIM BURTON / ESTÉTICA GÓTICA ROMÁNTICA INTERACTIVA -->
+        <!-- SECTION 7: INTERACTIVO (VELAS) -->
         <section class="py-20 px-4 max-w-4xl mx-auto">
             <div class="bg-darkPurple/80 border-2 border-goldGlow/40 rounded-2xl p-8 text-center space-y-8 gothic-border">
                 <div class="space-y-2">
-                    <h2 class="font-cinzel text-2xl sm:text-3xl text-goldGlow">Encantos de la Noche</h2>
-                    <p class="font-garamond text-lg text-purple-300 italic">Toca las velas para encender sus llamas en la oscuridad...</p>
+                    <h2 class="font-cinzel text-2xl sm:text-3xl text-goldGlow">Sección interactiva</h2>
+                    <p class="font-garamond text-lg text-purple-300 italic">Instrucción para interactuar...</p>
                 </div>
 
                 <!-- Interactive Candle Candelabra -->
@@ -383,131 +378,73 @@
                     </div>
                 </div>
 
-                <p id="candle-status" class="text-sm font-cinzel text-warmAmber tracking-wide">Las velas iluminan nuestro camino de octubre</p>
+                <p id="candle-status" class="text-sm font-cinzel text-warmAmber tracking-wide">Mensaje estado</p>
             </div>
         </section>
 
-        <!-- SECTION 8: CONTADOR / MOMENTO ESPECIAL -->
+        <!-- SECTION 8: RELOJ / CONTADOR VISUAL -->
         <section class="py-20 px-4 text-center max-w-2xl mx-auto">
             <div class="space-y-6">
-                <span class="text-xs font-cinzel tracking-widest text-goldGlow uppercase">Reloj de Octubre</span>
-                <h2 class="font-cinzel text-3xl text-purple-200">Octubre acaba de comenzar...</h2>
+                <span class="text-xs font-cinzel tracking-widest text-goldGlow uppercase">Etiqueta reloj</span>
+                <h2 class="font-cinzel text-3xl text-purple-200">Título sección...</h2>
 
                 <!-- Antique Pocket Clock Display -->
                 <div class="w-48 h-48 mx-auto border-4 border-goldGlow rounded-full bg-gothicBg flex flex-col items-center justify-center shadow-[0_0_30px_rgba(212,175,55,0.3)] relative">
-                    <span class="font-cinzel text-5xl font-extrabold text-goldGlow tracking-widest">01 · 10</span>
-                    <span class="text-xs font-garamond text-amber-200/80 mt-1">PRIMERO DE OCTUBRE</span>
+                    <span class="font-cinzel text-5xl font-extrabold text-goldGlow tracking-widest">00 · 00</span>
+                    <span class="text-xs font-garamond text-amber-200/80 mt-1">TEXTO INFERIOR</span>
                 </div>
 
                 <p class="font-garamond text-2xl text-slate-300 italic">
-                    "Un nuevo mes para seguir creando recuerdos."
+                    "Frase inferior del reloj."
                 </p>
             </div>
         </section>
 
-        <!-- SECTION 9: SECCIÓN "SI OCTUBRE FUERA UNA HISTORIA" -->
+        <!-- SECTION 9: TIMELINE / HISTORIA -->
         <section class="py-20 px-4 max-w-4xl mx-auto">
             <div class="text-center space-y-4 mb-16">
-                <h2 class="font-cinzel text-3xl sm:text-4xl text-goldGlow font-bold">Si octubre fuera una historia</h2>
-                <p class="font-garamond text-xl text-purple-300 italic">Cinco escenas de un cuento que escribimos juntos...</p>
+                <h2 class="font-cinzel text-3xl sm:text-4xl text-goldGlow font-bold">Título timeline</h2>
+                <p class="font-garamond text-xl text-purple-300 italic">Subtítulo timeline...</p>
             </div>
 
             <div class="relative border-l-2 border-goldGlow/40 ml-4 sm:ml-32 space-y-12 pl-6 sm:pl-10">
                 <!-- ESCENA I -->
                 <div class="relative group">
                     <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-crimsonWine border-2 border-goldGlow"></div>
-                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest">ESCENA I</span>
-                    <h3 class="font-playfair text-2xl text-goldGlow font-semibold">La primera noche de octubre</h3>
+                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest">NODO 1</span>
+                    <h3 class="font-playfair text-2xl text-goldGlow font-semibold">Título nodo 1</h3>
                     <p class="font-garamond text-xl text-slate-300 mt-2 italic leading-relaxed">
-                        "Cuando el viento cambia de aliento y la luna se viste de oro, descubro nuevamente que el mejor lugar del mundo es a tu lado."
+                        "Texto descriptivo del nodo 1."
                     </p>
                 </div>
 
                 <!-- ESCENA II -->
                 <div class="relative group">
                     <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-crimsonWine border-2 border-goldGlow"></div>
-                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest">ESCENA II</span>
-                    <h3 class="font-playfair text-2xl text-goldGlow font-semibold">Bajo la luna</h3>
+                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest">NODO 2</span>
+                    <h3 class="font-playfair text-2xl text-goldGlow font-semibold">Título nodo 2</h3>
                     <p class="font-garamond text-xl text-slate-300 mt-2 italic leading-relaxed">
-                        "Las sombras bailan en las paredes y la noche envuelve la tierra, pero en tus ojos solo veo la luz dorada que ilumina mi camino."
-                    </p>
-                </div>
-
-                <!-- ESCENA III -->
-                <div class="relative group">
-                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-crimsonWine border-2 border-goldGlow"></div>
-                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest">ESCENA III</span>
-                    <h3 class="font-playfair text-2xl text-goldGlow font-semibold">A un día de tu sueño</h3>
-                    <p class="font-garamond text-xl text-slate-300 mt-2 italic leading-relaxed">
-                        "Verte preparar todo para tu concierto, verte tan radiante, me hace darme cuenta de lo mucho que me fascina acompañarte en tus metas."
-                    </p>
-                </div>
-
-                <!-- ESCENA IV -->
-                <div class="relative group">
-                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-crimsonWine border-2 border-goldGlow"></div>
-                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest">ESCENA IV</span>
-                    <h3 class="font-playfair text-2xl text-goldGlow font-semibold">Cuando llega Halloween</h3>
-                    <p class="font-garamond text-xl text-slate-300 mt-2 italic leading-relaxed">
-                        "Entre misterios, faroles de calabaza y encantos del velo nocturno, mi único deseo constante sigue siendo tu compañía."
-                    </p>
-                </div>
-
-                <!-- ESCENA V -->
-                <div class="relative group">
-                    <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-5 h-5 rounded-full bg-crimsonWine border-2 border-goldGlow"></div>
-                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest">ESCENA V</span>
-                    <h3 class="font-playfair text-2xl text-goldGlow font-semibold">Y nosotros seguimos aquí</h3>
-                    <p class="font-garamond text-xl text-slate-300 mt-2 italic leading-relaxed">
-                        "El tiempo transcurre, las estaciones cambian, pero la promesa de quererte permanece intacta en nuestro segundo año de octubre."
+                        "Texto descriptivo del nodo 2."
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 10: GALERÍA DE LOGROS BTS -->
+        <!-- SECTION 10: GALERÍA DE IMÁGENES -->
         <section class="py-20 px-4 max-w-6xl mx-auto">
             <div class="text-center space-y-4 mb-12">
-                <span class="text-xs font-cinzel tracking-widest text-goldGlow uppercase">Cuenta Regresiva</span>
-                <h2 class="font-cinzel text-3xl sm:text-4xl text-goldGlow font-bold">Camino a BTS World Tour</h2>
-                <p class="font-garamond text-xl text-purple-300 italic">Tus mayores logros antes del gran día... Toca una imagen para contemplarla en detalle.</p>
+                <span class="text-xs font-cinzel tracking-widest text-goldGlow uppercase">Etiqueta galería</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl text-goldGlow font-bold">Título galería</h2>
+                <p class="font-garamond text-xl text-purple-300 italic">Instrucción para ver imágenes.</p>
             </div>
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Logro 1 -->
-                <div class="group relative overflow-hidden rounded-xl border-2 border-goldGlow/50 shadow-xl cursor-pointer bg-darkPurple" onclick="openLightbox('media/foto1.png', 'Outfit Evento K-POP')">
-                    <img src="media/foto1.png" alt="Outfit K-POP" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
+                <!-- Ítem 1 -->
+                <div class="group relative overflow-hidden rounded-xl border-2 border-goldGlow/50 shadow-xl cursor-pointer bg-darkPurple" onclick="openLightbox('', 'Alt texto')">
+                    <img src="" alt="Alt texto" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-gothicBg via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
-                    <span class="absolute bottom-4 left-4 font-cinzel text-xs text-goldGlow tracking-widest">LOGRO 01 · OUTFIT K-POP</span>
-                </div>
-
-                <!-- Logro 2 -->
-                <div class="group relative overflow-hidden rounded-xl border-2 border-goldGlow/50 shadow-xl cursor-pointer bg-darkPurple" onclick="openLightbox('media/foto2.png', 'Entrada BTS World Tour')">
-                    <img src="media/foto2.png" alt="Entrada BTS World Tour" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gothicBg via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
-                    <span class="absolute bottom-4 left-4 font-cinzel text-xs text-goldGlow tracking-widest">LOGRO 02 · TICKET AL CONCIERTO</span>
-                </div>
-
-                <!-- Logro 3 -->
-                <div class="group relative overflow-hidden rounded-xl border-2 border-goldGlow/50 shadow-xl cursor-pointer bg-darkPurple" onclick="openLightbox('media/foto3.png', 'ARMY Membership')">
-                    <img src="media/foto3.png" alt="ARMY Membership" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gothicBg via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
-                    <span class="absolute bottom-4 left-4 font-cinzel text-xs text-goldGlow tracking-widest">LOGRO 03 · ARMY MEMBERSHIP</span>
-                </div>
-
-                <!-- Logro 4 -->
-                <div class="group relative overflow-hidden rounded-xl border-2 border-goldGlow/50 shadow-xl cursor-pointer bg-darkPurple" onclick="openLightbox('media/foto4.png', 'Army Bomb')">
-                    <img src="media/foto4.png" alt="Army Bomb" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gothicBg via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
-                    <span class="absolute bottom-4 left-4 font-cinzel text-xs text-goldGlow tracking-widest">LOGRO 04 · ARMY BOMB</span>
-                </div>
-
-                <!-- Logro 5 -->
-                <div class="group relative overflow-hidden rounded-xl border-2 border-goldGlow/50 shadow-xl cursor-pointer bg-darkPurple sm:col-span-2 lg:col-span-2 justify-self-center w-full max-w-md lg:max-w-none" onclick="openLightbox('media/foto5.png', 'iPhone 15 Pro Max')">
-                    <img src="media/foto5.png" alt="iPhone 15 Pro Max" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-gothicBg via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
-                    <span class="absolute bottom-4 left-4 font-cinzel text-xs text-goldGlow tracking-widest">LOGRO 05 · IPHONE 15 PRO MAX</span>
+                    <span class="absolute bottom-4 left-4 font-cinzel text-xs text-goldGlow tracking-widest">ETIQUETA ITEM 1</span>
                 </div>
             </div>
         </section>
@@ -520,32 +457,29 @@
             </div>
         </div>
 
-        <!-- SECTION 11: SECCIÓN FINAL DE OCTUBRE -->
+        <!-- SECTION 11: TEXTOS AL HOVER -->
         <section class="py-20 px-4 max-w-3xl mx-auto text-center space-y-8">
-            <span class="text-xs font-cinzel tracking-widest text-pumpkinOrange uppercase">Reflexión Nocturna</span>
-            <h2 class="font-cinzel text-3xl sm:text-4xl text-goldGlow font-bold">Y si octubre pudiera decirte algo...</h2>
+            <span class="text-xs font-cinzel tracking-widest text-pumpkinOrange uppercase">Etiqueta lista hover</span>
+            <h2 class="font-cinzel text-3xl sm:text-4xl text-goldGlow font-bold">Título lista hover</h2>
 
             <div class="space-y-6 font-garamond text-2xl text-slate-200 italic leading-relaxed bg-darkPurple/40 p-8 rounded-xl border border-goldGlow/30">
-                <p class="hover:text-warmAmber transition-colors duration-300">"Gracias por existir en mi historia."</p>
-                <p class="hover:text-warmAmber transition-colors duration-300">"Que este mes nos encuentre juntos en cada pequeño momento."</p>
-                <p class="hover:text-warmAmber transition-colors duration-300">"Que disfrutes al máximo el concierto de tus sueños, estaré apoyándote siempre."</p>
-                <p class="text-goldGlow font-semibold hover:text-amber-300 transition-colors duration-300">"Feliz primero de octubre, mi princesa."</p>
-                <p class="text-goldGlow font-semibold hover:text-amber-300 transition-colors duration-300">"Feliz primero de octubre, mi linda mujer."</p>
+                <p class="hover:text-warmAmber transition-colors duration-300">"Ítem con hover normal."</p>
+                <p class="text-goldGlow font-semibold hover:text-amber-300 transition-colors duration-300">"Ítem destacado con hover."</p>
             </div>
         </section>
 
         <!-- SECTION 12 & 13: ESCENA FINAL CON JAVASCRIPT Y SEGUNDA CANCIÓN -->
         <section id="final-scene-section" class="relative min-h-screen py-20 px-4 flex flex-col items-center justify-center text-center bg-gradient-to-b from-gothicBg via-night to-gothicBg overflow-hidden">
             
-            <!-- Night Sky & Sprouting Pumpkins Visual Container -->
+            <!-- Visual Container -->
             <div class="max-w-4xl w-full space-y-12 relative z-10">
                 
                 <div class="space-y-4">
                     <h2 class="font-cinzel text-3xl sm:text-5xl text-goldGlow font-bold text-glow-gold">
-                        Y así comienza nuestro segundo octubre...
+                        Título final superior
                     </h2>
                     <p class="font-garamond text-2xl sm:text-3xl text-purple-200 italic max-w-2xl mx-auto">
-                        "Mi amor, si este mes fuera una película, elegiría vivir cada escena contigo y cantando a todo pulmón tus canciones favoritas."
+                        "Párrafo final superior."
                     </p>
                 </div>
 
@@ -554,20 +488,20 @@
                     <!-- Sprouted pumpkins via JS -->
                 </div>
 
-                <!-- MUSIC PLAYER 2: BTS / LAST SONG -->
+                <!-- MUSIC PLAYER 2 -->
                 <div class="music-box-card rounded-2xl p-6 sm:p-10 gothic-border max-w-xl mx-auto space-y-6">
                     <div class="space-y-2">
-                        <span class="text-xs font-cinzel tracking-widest text-goldGlow uppercase">Melodía Especial</span>
-                        <h3 class="font-cinzel text-2xl text-goldGlow font-bold">Una última canción antes de tu gran día...</h3>
-                        <p class="text-xs text-slate-400 font-montserrat">media/bts.mp3</p>
+                        <span class="text-xs font-cinzel tracking-widest text-goldGlow uppercase">Etiqueta reproductor 2</span>
+                        <h3 class="font-cinzel text-2xl text-goldGlow font-bold">Título reproductor 2</h3>
+                        <p class="text-xs text-slate-400 font-montserrat">ruta/audio2.mp3</p>
                     </div>
 
                     <button id="btn-play-bts" class="px-8 py-4 bg-crimsonWine hover:bg-red-800 text-goldGlow font-cinzel text-sm tracking-widest rounded-full border-2 border-goldGlow shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center mx-auto space-x-3">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                        <span>REPRODUCIR CANCIÓN DE BTS</span>
+                        <span>REPRODUCIR</span>
                     </button>
 
-                    <audio id="audio2" src="media/bts.mp3" preload="auto"></audio>
+                    <audio id="audio2" src="" preload="auto"></audio>
                 </div>
 
             </div>
@@ -577,25 +511,25 @@
         <section class="py-20 px-4 max-w-3xl mx-auto text-center min-h-[250px] flex items-center justify-center">
             <div id="final-quotes-carousel" class="transition-opacity duration-1000 ease-in-out">
                 <p id="final-quote-text" class="font-garamond text-2xl sm:text-3xl text-goldGlow italic leading-relaxed">
-                    "Hay historias que terminan cuando cae el telón; la nuestra apenas está escribiendo otra página en este segundo año."
+                    "Frase inicial del carrusel."
                 </p>
             </div>
         </section>
 
-        <!-- SECTION 15: MENSAJE FINAL -->
+        <!-- SECTION 15: MENSAJE FINAL / FOOTER -->
         <footer class="py-28 px-4 text-center border-t border-goldGlow/20 bg-gothicBg">
             <div class="max-w-2xl mx-auto space-y-8">
                 <h2 class="font-cinzel text-4xl sm:text-5xl text-goldGlow font-extrabold tracking-widest text-glow-gold">
-                    Feliz primero de octubre, mi amor.
+                    Título principal del footer.
                 </h2>
                 
                 <p class="font-garamond text-2xl text-purple-200 italic">
-                    Que este sea solamente el comienzo de otro mes lleno de nosotros, y que disfrutes mañana de ese concierto que tanto soñaste.
+                    Texto descriptivo final.
                 </p>
 
                 <div class="pt-6">
                     <p class="font-playfair text-3xl text-warmAmber font-bold text-glow-amber tracking-wider">
-                        TE AMO MUCHO.
+                        MENSAJE CORTADO FINAL.
                     </p>
                 </div>
             </div>
@@ -605,47 +539,20 @@
 
     <!-- JAVASCRIPT INTERACTIVE LOGIC -->
     <script>
-        // STRICT AUTHORIZED NICKNAMES DATA
+        // DATA ARRAYS
         const AUTHORIZED_NICKNAMES = [
-            { name: "amor", phrase: "En cada rincón de este mes de octubre, tu nombre es mi canción favorita." },
-            { name: "mi vida", phrase: "Gracias por iluminar mis noches frías con la tibieza de tu presencia." },
-            { name: "cariño", phrase: "Un refugio perfecto en medio del viento y las hojas que caen suavemente." },
-            { name: "mi cielo", phrase: "Bajo este firmamento lleno de estrellas, tú eres la única luz que observo." },
-            { name: "mi reina", phrase: "Gobiernas mi corazón con la dulzura de tus palabras y la elegancia de tu sonrisa." },
-            { name: "mi mujer", phrase: "Orgulloso de caminar a tu lado en esta y en cada una de las estaciones." },
-            { name: "mi princesa", phrase: "Un cuento de hadas gótico no estaría completo sin el misterio hermoso de tu mirada." },
-            { name: "mi bella damita", phrase: "Elegante, misteriosa y encantadora; no existe en este mundo alguien como tú." },
-            { name: "mi amorshita", phrase: "Pequeños detalles como abrazarte hacen que el otoño sea la estación más cálida." },
-            { name: "mi amorcita", phrase: "Cada latido mío susurra tu nombre en la quietud de las noches de octubre." },
-            { name: "mi linda mujer", phrase: "La belleza del otoño palidece cuando apareces con tu sonrisa infinita." }
+            { name: "Título", phrase: "Descripción del ítem 1." },
+            { name: "Título", phrase: "Descripción del ítem 2." }
         ];
 
-        // 10 ORIGINAL CINEMATOGRAPHIC GOTHIC PHRASES
         const CINEMA_PHRASES = [
-            "Hay amores que no necesitan un castillo para sentirse eternos; basta con encontrar a alguien con quien hasta la noche más oscura parezca hermosa.",
-            "Si nuestro destino estuviera escrito en un antiguo libro gótico, juraría que cada capítulo llevaría grabado el reflejo de tu mirada.",
-            "Ni el viento helado de octubre ni la niebla más densa podrían apagar la cálida llama que encendiste en mi pecho.",
-            "Dicen que las estrellas brillan en secreto, pero mi amor por ti resplandece incluso a plena luz de la luna llena.",
-            "Caminar contigo bajo la sombra de la noche es descubrir que el misterio más dulce se oculta en tu sonrisa.",
-            "Si la eternidad fuera una melodía de caja de música, quisiera escucharla en bucle solo si es a tu lado.",
-            "En este mundo de sombras y luces de calabaza, tú eres la única certeza que mi alma reconoce.",
-            "No le temo a la noche ni al paso del tiempo; le temo a un solo instante de existencia donde no estés tú.",
-            "Entre hojas secas y veladas románticas, te elegiría a ti en esta vida, en la siguiente y en todas las sombras del tiempo.",
-            "Tu amor es como una suave melodía de medianoche: tranquila, inmortal y capaz de iluminar hasta el rincón más oscuro."
+            "Frase de ejemplo 1.",
+            "Frase de ejemplo 2."
         ];
 
-        // 10 FINAL SLIDESHOW QUOTES
         const FINAL_QUOTES = [
-            "Hay historias que terminan cuando cae el telón; la nuestra apenas está escribiendo otra página en este segundo año.",
-            "Quizá el amor no necesite eternidad, sino suficientes momentos para hacer que cada segundo valga la pena.",
-            "Entre la oscuridad de la noche siempre existe una luz cuando tienes a alguien especial a tu lado.",
-            "No hay hechizo más poderoso ni magia más antigua que el simple calor de tu mano entre las mías.",
-            "Que la luna sea testigo de que cada pensamiento nocturno me lleva inevitablemente hacia ti.",
-            "En el gran teatro de la noche de octubre, tu presencia es la escena que nunca quiero que termine.",
-            "Ni los fantasmas del pasado ni las incertidumbres del futuro pueden opacar lo que siento hoy por ti.",
-            "Escribir nuestro amor en este mes de misterio es recordar que los mejores milagros ocurren en el silencio de la noche.",
-            "Un susurro al viento de otoño basta para recordarle al universo entero lo mucho que te amo.",
-            "Contigo, la noche no es el final del día, sino el escenario perfecto donde florece nuestro amor."
+            "Cita para carrusel 1.",
+            "Cita para carrusel 2."
         ];
 
         // TYPEWRITER INITIALIZATION
@@ -665,11 +572,11 @@
             const mainEl = document.getElementById('typewriter-main');
             const btnEl = document.getElementById('btn-enter');
 
-            typeText(titleEl, "01 / OCTOBER", 80, () => {
+            typeText(titleEl, "TÍTULO TYPEWRITER", 80, () => {
                 setTimeout(() => {
-                    typeText(subEl, "Nuestro segundo octubre juntos...", 60, () => {
+                    typeText(subEl, "Subtítulo typewriter...", 60, () => {
                         setTimeout(() => {
-                            typeText(mainEl, "Feliz primero de octubre, mi amor.", 60, () => {
+                            typeText(mainEl, "Texto final typewriter.", 60, () => {
                                 btnEl.classList.remove('hidden');
                                 btnEl.addEventListener('click', closeIntroOverlay);
                             });
@@ -705,7 +612,7 @@
             const container = document.getElementById('nicknames-grid');
             container.innerHTML = AUTHORIZED_NICKNAMES.map(item => `
                 <div class="bg-darkPurple/60 border border-goldGlow/40 rounded-xl p-6 gothic-border transition-all duration-300 hover:scale-105 hover:border-goldGlow">
-                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest uppercase">APODO DE AMOR</span>
+                    <span class="font-cinzel text-xs text-pumpkinOrange tracking-widest uppercase">ETIQUETA GRID</span>
                     <h3 class="font-playfair text-2xl text-goldGlow font-bold mt-1 text-glow-gold">"${item.name}"</h3>
                     <p class="font-garamond text-lg text-slate-300 mt-3 italic leading-relaxed">
                         ${item.phrase}
@@ -718,7 +625,7 @@
             const container = document.getElementById('cinema-phrases-grid');
             container.innerHTML = CINEMA_PHRASES.map((phrase, index) => `
                 <div class="bg-darkPurple/40 border-l-4 border-goldGlow p-6 rounded-r-xl shadow-lg hover:bg-darkPurple/80 transition-colors">
-                    <span class="font-cinzel text-xs text-amber-300 tracking-widest">ESCENA ROMÁNTICA 0${index + 1}</span>
+                    <span class="font-cinzel text-xs text-amber-300 tracking-widest">ETIQUETA ${index + 1}</span>
                     <p class="font-garamond text-xl text-slate-200 italic mt-2 leading-relaxed">
                         "${phrase}"
                     </p>
@@ -731,10 +638,10 @@
             const statusText = document.getElementById('candle-status');
             if (flame.style.opacity === '0') {
                 flame.style.opacity = '1';
-                statusText.textContent = "Las velas iluminan nuestro camino de octubre";
+                statusText.textContent = "Mensaje estado activo";
             } else {
                 flame.style.opacity = '0';
-                statusText.textContent = "Has apagado una vela en la penumbra...";
+                statusText.textContent = "Mensaje estado inactivo";
             }
         }
 
@@ -840,7 +747,6 @@
                     audio1.play().then(() => {
                         updateUIPlay1(true);
                     }).catch(() => {
-                        // Play Synthesizer Romantic Music Box Fallback if MP3 is missing locally
                         playSynthMelody1();
                         updateUIPlay1(true);
                     });
@@ -905,7 +811,7 @@
                 if (synthInterval1) clearInterval(synthInterval1);
             }
 
-            // Player 2 - BTS Song
+            // Player 2
             const audio2 = document.getElementById('audio2');
             const btnPlayBTS = document.getElementById('btn-play-bts');
 
@@ -913,15 +819,13 @@
                 audio2.play().then(() => {
                     activateMusic2VisualEffects();
                 }).catch(() => {
-                    // Fallback synthesized chime
                     playSynthMelody1();
                     activateMusic2VisualEffects();
                 });
             });
 
             function activateMusic2VisualEffects() {
-                speedMultiplier = 2.5; // Accelerate particle rain
-                // Pulse pumpkins
+                speedMultiplier = 2.5; 
                 const svgPumpkins = document.querySelectorAll('.pumpkin-svg');
                 svgPumpkins.forEach(p => p.classList.add('animate-pulse-glow'));
             }
